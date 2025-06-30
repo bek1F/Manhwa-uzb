@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Manhwa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #info {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            max-width: 100%;
+            overflow: hidden; 
+        }
+        #info img.cover {
+            width: 200px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        #info .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            background: #007acc;
+            color: white;
+            padding: 8px 14px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        ul li {
+            margin: 4px 0;
+        }
+    </style>
+</head>
+<body class="body" >
+<br>
+    <a href="index.html">🏠 Bosh sahifa</a>
+    <div id="info">Yuklanmoqda...</div>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    fetch("data.json")
+        .then(res => res.json())
+        .then(data => {
+            const manhwa = data.manhwa.find(m => m.id === id);
+            if (!manhwa) {
+                document.getElementById("info").innerHTML = "<p>Manhwa topilmadi.</p>";
+                return;
+            }
+
+            const similar = data.manhwa.filter(m => m.genre === manhwa.genre && m.id !== manhwa.id).slice(0, 10);
+            const info = document.getElementById("info");
+            info.innerHTML = `
+                <h1>${manhwa.title}</h1>
+                <img src="${manhwa.cover}" class="cover" alt="${manhwa.title}">
+                <p><strong>Janr:</strong> ${manhwa.genre}</p>
+                <p><strong>Muallif:</strong> ${manhwa.author}</p>
+                <p>${manhwa.description}</p>
+                <a href="read.html?id=${manhwa.id}&n=0" class="btn">📖 O‘qishni boshlash</a>
+                <a href="read.html?id=${manhwa.id}&n=${manhwa.parts.length - 1}" class="btn">⏭ Ohirgi bob</a>
+                <h3>🔁 O‘xshash manhwalar:</h3>
+                <ul>${similar.map(s => `<li><a href="manhwa.html?id=${s.id}">${s.title}</a></li>`).join("")}</ul>
+            `;
+        })
+        .catch(() => {
+            document.getElementById("info").innerHTML = "<p>Xatolik yuz berdi. Ma’lumotni yuklab bo‘lmadi.</p>";
+        });
+</script>
+
+</body>
+</html>

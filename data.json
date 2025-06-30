@@ -1,0 +1,519 @@
+{
+  "manhwa": [
+    {
+      "id": "agar-tezda",
+      "title": "Agar tez orada olmasam rostakamiga yengilmas bolib ketaman!",
+      "cover": "https://static2.mangapoisk.live/posters/11877/vIXe1QcGpuawUYbuHwdEqLhgHx64ylTD1TRfxsw9_mini.jpg",
+      "genre": "Aksiya",
+      "author": "Kim Jae-Han",
+      "description": "Qahramonimiz hayoti butunlay o'zgaradi...",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "files/agar-tezda-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "files/agar-tezda-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "files/agar-tezda-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "files/agar-tezda-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "files/agar-tezda-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "files/agar-tezda-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "files/agar-tezda-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "files/agar-tezda-8.pdf"
+        },
+        {
+          "title": "9-bob",
+          "file": "files/agar-tezda-9.pdf"
+        },
+        {
+          "title": "10-bob",
+          "file": "files/agar-tezda-10.pdf"
+        },
+        {
+          "title": "11-bob",
+          "file": "files/agar-tezda-11.pdf"
+        },
+        {
+          "title": "12-bob",
+          "file": "files/agar-tezda-12.pdf"
+        },
+        {
+          "title": "13-bob",
+          "file": "files/agar-tezda-13.pdf"
+        },
+        {
+          "title": "14-bob",
+          "file": "files/agar-tezda-14.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "title": "Mudofa o'yinining zolimi",
+      "step": "desc",
+      "cover": "https://you-anime.ru/manga-images/posters/banger-gam-pokgunidoeassda.jpg",
+      "genre": "Aksiya, Sarguzasht, Komediya, Fantaziya",
+      "author": "???",
+      "description": "Bu qahramon eng kuchli gaymer bo'ladi va u hechkim yuta olmagan o'yinda yutadi va uni o'yin yaratuvchisiman deb tanishtirgan odam boshqa dunyoga olib ketadi ....",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "files/1-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "files/1-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "files/1-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "files/1-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "files/1-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "files/1-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "files/1-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "files/1-8.pdf"
+        },
+        {
+          "title": "9-bob",
+          "file": "files/1-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Gersogning Aziz Asrab Olingan Qizi",
+      "step": "desc",
+      "cover": "downloads/2-cover.jpg",
+      "genre": "Drama, Fantaziya, Romantika, Uzun formatli komiks, Isekai, Moslashma, Rangli, Sehr, Qayta tug‘ilish, Yovuz qahramon ayol",
+      "author": "???",
+      "description": "Men bosh qahramonni yetimxonada qiynagan eng yovuz qahramon — Ellie —ning tanasiga kirib qoldim. Hech narsaga aralashmaslikka va roman voqealariga qo‘shilmaslikka qaror qildim, toki Gersog kelib, o‘sha bolani asrab oladigan kun yetmaguncha. O‘zimni yomon yakundan saqlab qolmoqchi edim, lekin...",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/2-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/2-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/2-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/2-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "downloads/2-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "downloads/2-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "downloads/2-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "downloads/2-8.pdf"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Jang san'ati mabudining qayta tug'ilishi",
+      "step": "desc",
+      "cover": "downloads/3-cover.jpg",
+      "genre": "ᴀᴄᴛɪᴏɴ, ᴀᴅᴠᴇɴᴛᴜʀᴇ, ꜰᴀɴᴛᴀꜱʏ,",
+      "author": "???",
+      "description": "???",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/3-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/3-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/3-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/3-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "downloads/3-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "downloads/3-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "downloads/3-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "downloads/3-8.pdf"
+        },
+        {
+          "title": "9-bob",
+          "file": "downloads/3-9.pdf"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Men Bu Oila’ni Buyuklikka Yetkazaman",
+      "step": "desc",
+      "cover": "downloads/4-cover.jpg",
+      "genre": "Drama, Fantastika, Biznes, Korporatsiyalar, Reinkarnatsiya, Manxva",
+      "author": "???",
+      "description": "Bir paytlar global imperiyani boshqargan korporativ qirol to‘satdan vafot etadi... va kambag‘al bir oilada bola sifatida qayta tug‘iladi. O‘z taqdirini o‘zgartirishga qat’iy ahd qilgan u, oldingi hayotidagi bilim va tajribasidan foydalangan holda, tubdan yuqoriga ko‘tarilishni boshlaydi. Maqsadi — boylik va muvaffaqiyatni qayta qurish va oilasini ulug‘lik sari yetaklash!",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/4-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/4-2.pdf"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Bola Parvarishi Romanlarida Barcha Onalar O‘lishi Shartmi?",
+      "step": "desc",
+      "cover": "downloads/5-cover.jpg",
+      "genre": "Drama, Fantaziya, Romantika, Uzun formatli komiks",
+      "author": "Web City",
+      "description": "U bola parvarishiga oid bir roman ichida, o‘lishga mahkum bo‘lgan ona sifatida qayta tug‘iladi. Fojiali taqdiridan qochishga uringanida, tasodifan imperatorning o‘ziga—kelajakdagi eri—tushib qoladi! Ammo o‘lim o‘rniga u mehr bilan to‘la bir oilaning markaziga aylanadi. Shunday bo‘lsa-da, u bu qismatni o‘zgartira oladimi? Barcha onalar o‘lishga mahkum degan stereotipni buzib, omon qolishga muvaffaq bo‘ladimi?",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/5-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/5-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/5-3.pdf"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Jang sanati dunyosidagi zamonaviy odam bolib yashash va taqdirni o'zgartirish",
+      "step": "desc",
+      "cover": "downloads/6-cover.jpg",
+      "genre": "Aksiyon, Fantastika, Harbiy san’atlar",
+      "author": "Web City",
+      "description": "Men tirikchilik uchun yarim stavkada ishlovchi davlat xizmatchisi edim. Tunda yetkazib berish vaqtida tez harakatlanayotgan mashina meni urib yubordi. Men o‘lim oldidan avtohalokatda halok bo‘lganimni aniq eslayman.\n“…Men Jo Hwi bo‘ldimmi?”\nQachondir men qulayotgan Jo Ga-cheol klanining ikkinchi o‘g‘liga aylanganman. Bu oilada na hokimiyat bor, na o‘z irodasini amalga oshirish qudrati. Faqat butun oilani yo‘q qilib yuborishi mumkin bo‘lgan katta qarz mavjud.\nFaqat bitta yo‘l bor!\n“Otajon, Jo Ga-cheol klanini menga topshiring.”\nDavlat xizmatchisining bilim va tajribasiga tayanib muvaffaqiyatga erishishga harakat qilayotgan zamonaviy odam haqidagi hikoya — endi boshlanmoqda!",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/6-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/6-2.pdf"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Urush mabudining qaytishi",
+      "step": "desc",
+      "cover": "downloads/8-cover.jpg",
+      "genre": "Aᴄᴛɪᴏɴ, Fᴀɴᴛᴀsʏ, Mᴜʀɪᴍ,",
+      "author": "Goku manhwa",
+      "description": "???",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/8-1.pdf"
+        },
+        {
+          "title": "1-bob",
+          "file": "downloads/8-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/8-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/8-3.pdf"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Teskari yovuz odam",
+      "step": "desc",
+      "cover": "downloads/9-cover.png",
+      "genre": "Action, Adventure, Fantasy",
+      "author": "Goku manhwa",
+      "description": "???",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/9-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/9-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/9-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/9-4.pdf"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "DO'ZAX QIROLINING QAYTISHI",
+      "step": "desc",
+      "cover": "downloads/10-cover.jpg",
+      "genre": "Harakat, Sarguzasht, Fantaziya, Qasos",
+      "author": "Goku manhwa",
+      "description": "Oxirat dunyosi qulagan. Qon oqishi kerak bo‘lgan quruq yerlarda endi tiniq suv oqmoqda, va ilgari ruhlar qaynagan qozon anchadan beri sovigan. Do‘zaxning nafaqaga chiqqan podshohi o‘z baxtini izlab, qayta tug‘ilish yo‘lini qidirmoqda. Biroq, Ostona olamidagi tartibsizlik tufayli...",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/10-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/10-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/10-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/10-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "downloads/10-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "downloads/10-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "downloads/10-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "downloads/10-8.pdf"
+        },
+        {
+          "title": "9-bob",
+          "file": "downloads/10-9.pdf"
+        },
+        {
+          "title": "10-bob",
+          "file": "downloads/10-10.pdf"
+        },
+        {
+          "title": "11-bob",
+          "file": "downloads/10-11.pdf"
+        },
+        {
+          "title": "12-bob",
+          "file": "downloads/10-12.pdf"
+        },
+        {
+          "title": "13-bob",
+          "file": "downloads/10-13.pdf"
+        },
+        {
+          "title": "14-bob",
+          "file": "downloads/10-14.pdf"
+        },
+        {
+          "title": "15-bob",
+          "file": "downloads/10-15.pdf"
+        },
+        {
+          "title": "16-bob",
+          "file": "downloads/10-16.pdf"
+        },
+        {
+          "title": "17-bob",
+          "file": "downloads/10-17.pdf"
+        },
+        {
+          "title": "18-bob",
+          "file": "downloads/10-18.pdf"
+        },
+        {
+          "title": "19-bob",
+          "file": "downloads/10-19.pdf"
+        },
+        {
+          "title": "20-bob",
+          "file": "downloads/10-20.pdf"
+        },
+        {
+          "title": "21-bob",
+          "file": "downloads/10-21.pdf"
+        },
+        {
+          "title": "22-bob",
+          "file": "downloads/10-22.pdf"
+        },
+        {
+          "title": "23-bob",
+          "file": "downloads/10-23.pdf"
+        },
+        {
+          "title": "24-bob",
+          "file": "downloads/10-24.pdf"
+        },
+        {
+          "title": "25-bob",
+          "file": "downloads/10-25.pdf"
+        },
+        {
+          "title": "26-bob",
+          "file": "downloads/10-26.pdf"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Shamanning qilichi",
+      "step": "desc",
+      "cover": "downloads/11-cover.jpg",
+      "genre": "Action, Sarguzasht, Daxshat, Fantastikю",
+      "author": "Goku Manhwa",
+      "description": "Xurofotlarga ishonmaydigan bosh qahramon Kvon Yongjin, 16 yoshga to‘lganidan so‘ng darhol aqlga sig‘mas voqealar bilan yuzma-yuz bo‘ladi.",
+      "parts": [
+        {
+          "title": "1-bob",
+          "file": "downloads/11-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/11-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/11-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/11-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "downloads/11-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "downloads/11-6.pdf"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "ZAHARLI AJDARHO : ASURA AFSONASI",
+      "step": "desc",
+      "cover": "downloads/12-cover.jpg",
+      "genre": "FANTASTIK, MURIM, ACTION, SARGUZASHT.",
+      "author": "Goku manhwa",
+      "description": "Tibbiot mazhabini zaharli qiriq oyoq bilan yo'q qilishadi ammo u zahardan bir bola omon qoladi va uni zaharli mazhab oqsoqoli turlihil zaharli hashorotlar bolan qiynidi ...",
+      "parts": [
+        {
+          "title": "0-bob",
+          "file": "downloads/12-0.pdf"
+        },
+        {
+          "title": "1-bob",
+          "file": "downloads/12-1.pdf"
+        },
+        {
+          "title": "2-bob",
+          "file": "downloads/12-2.pdf"
+        },
+        {
+          "title": "3-bob",
+          "file": "downloads/12-3.pdf"
+        },
+        {
+          "title": "4-bob",
+          "file": "downloads/12-4.pdf"
+        },
+        {
+          "title": "5-bob",
+          "file": "downloads/12-5.pdf"
+        },
+        {
+          "title": "6-bob",
+          "file": "downloads/12-6.pdf"
+        },
+        {
+          "title": "7-bob",
+          "file": "downloads/12-7.pdf"
+        },
+        {
+          "title": "8-bob",
+          "file": "downloads/12-8.pdf"
+        }
+      ]
+    }
+  ]
+}

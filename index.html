@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Manhwalar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f5f5f5; }
+        h1 { color: #222; }
+        .card { display: inline-block; margin: 10px; background: #fff; padding: 10px; width: 200px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: auto; border-radius: 6px; }
+        .card h3 { margin: 10px 0 6px; font-size: 16px; }
+        .card a { text-decoration: none; background: #0099cc; color: white; padding: 6px 10px; display: inline-block; border-radius: 5px; }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #dce0e4;
+            padding: 10px 20px;
+            align-items: center;
+        }
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar .logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 6px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        #pagination {
+            margin-top: 20px;
+        }
+        #pagination button {
+            padding: 6px 12px;
+            margin: 0 4px;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #notify {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: none;
+            font-size: 15px;
+            animation: fadein 0.4s ease;
+            z-index: 1000;
+        }
+        @keyframes fadein {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body class="body">
+
+<h1>📚 O'zbekcha Manhwalar</h1>
+<input type="text" id="search" placeholder="🔍 Manhwa nomi bo‘yicha qidirish..." />
+<div id="manhwa-list"></div>
+<div id="pagination"></div>
+
+<!-- 🔔 Bildirishcha -->
+<div id="notify">✅ Yangi kontent qo‘shildi!</div>
+
+<script>
+    let manhwas = [];
+    let filtered = [];
+    const listDiv = document.getElementById("manhwa-list");
+    const paginationDiv = document.getElementById("pagination");
+    const searchInput = document.getElementById("search");
+    const perPage = 10;
+    let page = 1;
+
+    function render() {
+        listDiv.innerHTML = "";
+        let start = (page - 1) * perPage;
+        let end = start + perPage;
+        let sliced = filtered.slice(start, end);
+
+        if (sliced.length === 0) {
+            listDiv.innerHTML = "<p>Hech narsa topilmadi.</p>";
+            paginationDiv.innerHTML = "";
+            return;
+        }
+
+        sliced.forEach(m => {
+            listDiv.innerHTML += `
+            <div class="card">
+                <img src="${m.cover || 'images/default.jpg'}" alt="${m.title}">
+                <h3>${m.title}</h3>
+                <a href="manhwa.html?id=${m.id}">📖 O‘qish</a>
+            </div>`;
+        });
+
+        paginationDiv.innerHTML = "";
+        if (page > 1)
+            paginationDiv.innerHTML += '<button onclick="page--; render()">⬅ Oldingi</button>';
+        if (end < filtered.length)
+            paginationDiv.innerHTML += '<button onclick="page++; render()">Keyingi ➡</button>';
+    }
+
+    function applySearch() {
+        const keyword = searchInput.value.toLowerCase();
+        filtered = manhwas.filter(m => m.title.toLowerCase().includes(keyword));
+        page = 1;
+        render();
+    }
+
+    function showNotification(text) {
+        const notify = document.getElementById("notify");
+        notify.textContent = text;
+        notify.style.display = "block";
+        setTimeout(() => {
+            notify.style.display = "none";
+        }, 4000);
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    fetch("data.json")
+        .then(res => res.json())
+        .then(data => {
+            const newManhwas = data.manhwa;
+            shuffleArray(newManhwas); // Tasodifiylashtirish shu yerda!
+
+            const lastData = JSON.parse(localStorage.getItem("lastData")) || { count: 0, parts: {} };
+
+            const currentCount = newManhwas.length;
+            const currentParts = {};
+            let newManhwaAdded = false;
+            let newPartsAdded = false;
+
+            newManhwas.forEach(m => {
+                currentParts[m.id] = m.parts.length;
+                if (!lastData.parts[m.id]) {
+                    newManhwaAdded = true;
+                } else if (m.parts.length > lastData.parts[m.id]) {
+                    newPartsAdded = true;
+                }
+            });
+
+            if (currentCount > lastData.count) newManhwaAdded = true;
+
+            if (newManhwaAdded) showNotification("📚 Yangi manhwa qo‘shildi!");
+            else if (newPartsAdded) showNotification("📄 Yangi boblar qo‘shildi!");
+
+            localStorage.setItem("lastData", JSON.stringify({
+                count: currentCount,
+                parts: currentParts
+            }));
+
+            manhwas = newManhwas;
+            filtered = manhwas;
+            render();
+        })
+        .catch(() => {
+            listDiv.innerHTML = "<p>Xatolik yuz berdi. Ma’lumotlar yuklanmadi.</p>";
+        });
+
+    searchInput.addEventListener("input", applySearch);
+</script>
+
+</body>
+</html>
